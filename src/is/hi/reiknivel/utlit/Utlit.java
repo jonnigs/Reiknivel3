@@ -11,7 +11,7 @@ package is.hi.reiknivel.utlit;
 
 /* Importa gefna klasanum Reiknivel og klasanum 
 *  JButton til að geta unnið með grid layout
- */
+*/
 import is.hi.reiknivel.vinnsla.Reiknivel;
 import javax.swing.JButton;
 
@@ -25,7 +25,7 @@ public class Utlit extends javax.swing.JFrame {
 
     /* Bý til JButton, líkt og í GridLayoutSynidæmi til að geta 
     *  unnið með alla töluhnappana í sama atburðarhandler
-     */
+    */
     private final JButton[] REITIR;
 
     public Utlit() {
@@ -245,7 +245,7 @@ public class Utlit extends javax.swing.JFrame {
 
         /* Finnum út hvort að ýtt hafi verið á =, ef svo er 
         *  þá núllstillir reiknivélin sig og þurkar út úr glugganum
-         */
+        */
         if (samaSem == true) {
             myReiknivel.nullStilla();
             samaSem = false;
@@ -254,9 +254,10 @@ public class Utlit extends javax.swing.JFrame {
         // Setur töluna sem ýtt var á inn í gluggann
         String Enternumber = jUtkoma.getText() + nyrReitur.getText();
         jUtkoma.setText(Enternumber);
-        /* Löng if setning, fann ekki út hvernig þetta hefði átt að vera öðruvísi.
-        *  En hún skoðar hvaða tölu var ýtt á og passar að færa til um sæti.
-         */
+        /* Löng if setning, fann ekki út hvernig þetta hefði átt að vera 
+        *  öðruvísi. En hún skoðar hvaða tölu var ýtt á og passar að færa til 
+        *  um sæti.
+        */
         if (nyrReitur.getText() == "1") {
             myReiknivel.setTala(1);
         } else if (nyrReitur.getText() == "2") {
@@ -288,10 +289,11 @@ public class Utlit extends javax.swing.JFrame {
     }//GEN-LAST:event_jHreinsaActionPerformed
 
     // Atburðarhandler fyrir sama sem hnappinn
+    // Hvað gerist núna?
     private void jJafntOgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jJafntOgActionPerformed
         /* Setur virkjan sem "=" og skoðar hvort að það hafi verið ýtt á 
         *  hann áður, ef svo er þá núllstillir vélin sig og hreinsar gluggan
-         */
+        */
         int villa = myReiknivel.setVirki('=');
 
         if (villa == 0) {
@@ -313,7 +315,7 @@ public class Utlit extends javax.swing.JFrame {
         *  hreinsar vélin og núllstillir sig.
         *  Setur virkjan sem "+" og bætir honum við á skjáinn, gerir 
         *  ekkert ef að síðast var ýtt á virkja
-         */
+        */
         if (samaSem == true) {
             myReiknivel.nullStilla();
             jUtkoma.setText(" ");
@@ -332,7 +334,7 @@ public class Utlit extends javax.swing.JFrame {
         *  hreinsar vélin og núllstillir sig.
         *  Setur virkjan sem "-" og bætir honum við á skjáinn, gerir 
         *  ekkert ef að síðast var ýtt á virkja
-         */
+        */
         if (samaSem == true) {
             myReiknivel.nullStilla();
             jUtkoma.setText(" ");
@@ -346,12 +348,13 @@ public class Utlit extends javax.swing.JFrame {
     }//GEN-LAST:event_jMinusActionPerformed
 
     // Atburðarhandler fyrir margföldunarhnappinn
+    //????
     private void jMargfoldunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMargfoldunActionPerformed
         /* Byrjar á að skoða hvort ýtt hafi verið á "=", ef svo er þá 
         *  hreinsar vélin og núllstillir sig.
         *  Setur virkjan sem "*" og bætir honum við á skjáinn, gerir 
         *  ekkert ef að síðast var ýtt á virkja
-         */
+        */
         if (samaSem == true) {
             myReiknivel.nullStilla();
             jUtkoma.setText(" ");
@@ -370,7 +373,7 @@ public class Utlit extends javax.swing.JFrame {
         *  hreinsar vélin og núllstillir sig.
         *  Setur virkjan sem "/" og bætir honum við á skjáinn, gerir 
         *  ekkert ef að síðast var ýtt á virkja
-         */
+        */
         if (samaSem == true) {
             myReiknivel.nullStilla();
             jUtkoma.setText(" ");
