@@ -347,6 +347,9 @@ public class Utlit extends javax.swing.JFrame {
     }//GEN-LAST:event_jMinusActionPerformed
 
     // Atburðarhandler fyrir margföldunarhnappinn
+    //Gera fleiri skref á
+    // test branch.
+    // Virðist ekki vera að koma inn
     private void jMargfoldunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMargfoldunActionPerformed
         /* Byrjar á að skoða hvort ýtt hafi verið á "=", ef svo er þá 
         *  hreinsar vélin og núllstillir sig.
