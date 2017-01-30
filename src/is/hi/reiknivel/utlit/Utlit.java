@@ -289,7 +289,6 @@ public class Utlit extends javax.swing.JFrame {
     }//GEN-LAST:event_jHreinsaActionPerformed
 
     // Atburðarhandler fyrir sama sem hnappinn
-    // Hvað gerist núna?
     private void jJafntOgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jJafntOgActionPerformed
         /* Setur virkjan sem "=" og skoðar hvort að það hafi verið ýtt á 
         *  hann áður, ef svo er þá núllstillir vélin sig og hreinsar gluggan
@@ -348,7 +347,6 @@ public class Utlit extends javax.swing.JFrame {
     }//GEN-LAST:event_jMinusActionPerformed
 
     // Atburðarhandler fyrir margföldunarhnappinn
-    //????
     private void jMargfoldunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMargfoldunActionPerformed
         /* Byrjar á að skoða hvort ýtt hafi verið á "=", ef svo er þá 
         *  hreinsar vélin og núllstillir sig.
